@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Chat Center: Installation Guide :: dena Docs Demo Site</title>
+    <link rel="canonical" href="https://rodrikw.github.io/demosite/chat-center/dev/install/index.html">
+    <meta name="description" content="This document is intended to demonstrate a typical installation document.">
+    <meta name="keywords" content="Chat Center, installation">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://rodrikw.github.io/demosite">dena Docs Demo Site</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="chat-center" data-version="dev">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Chat Center</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../admin/index.html">Administrator Guide</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../agent/index.html">Agent Guide</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="index.html">Installation Guide</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../supervisor/index.html">Supervisor Guide</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Chat Center</span>
+    <span class="version">dev</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../home/index.html">⌂ Home</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../home/index.html">Current</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">Chat Center</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">dev</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../dena-saas/dev/index.html">dena.SaaS</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dena-saas/dev/index.html">dev</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Chat Center</a></li>
+    <li><a href="index.html">Installation Guide</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Chat Center: Installation Guide</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock right text-center">
+<div class="content">
+<a class="image" href="_attachments/index.pdf"><img src="../../../home/_images/pdf-icon.svg" alt="pdf icon"></a>
+</div>
+</div>
+<div class="paragraph">
+<p><br>
+<br></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Version</div>
+<div class="paragraph">
+<p>Chat Center dev</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_architecture"><a class="anchor" href="#_architecture"></a>Architecture</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The high-level architecture is depicted in the diagram below.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/scoring_architecture.svg" alt="scoring architecture">
+</div>
+<div class="title">Figure 1. Module architecture</div>
+</div>
+<div class="paragraph">
+<p>The image is inserted using the following directive:</p>
+</div>
+<div class="paragraph">
+<p><code>image::scoring_architecture.svg[]</code></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entities</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Business processes</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Business processes provide scoring point calculations based on business rules and behavioral analysis.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Scoring calculator</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The scoring calculator calculates the value of the credit score based on business rules (including behavioral and statistical scoring).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Secure officer</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The main function of the security officer is to check for fraud.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Analyst</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Analysts create and configure scoring maps.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Underwriter</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Underwriters provide the final decision on whether credit is issued to the customer after the calculation and checking have completed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Internal systems</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Can interact with multiple internal systems such as back-office, front end, fraud management, and core banking systems.
+The following information is exchanged: Customer information, Account statements, Customer history</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>External systems</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Can interact with multiple external entities such as credit bureaus, government databases, mobile banking, Internet banking, and others external systems.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following software must be installed before performing the installation of the Scoring module:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Java Runtime Environment (JRE) 1.8</p>
+</li>
+<li>
+<p>Oracle RDBMS 11 or greater</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installation"><a class="anchor" href="#_installation"></a>Installation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The installation of the Scoring module is performed in multiple steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#Creating the Scoring database">Create the Scoring database</a></p>
+</li>
+<li>
+<p><a href="#_configuring_the_database_connections">Configure the database connections</a></p>
+</li>
+<li>
+<p><a href="#_creating_the_base_scoring_objects">Create the base scoring objects</a></p>
+</li>
+<li>
+<p><a href="#_starting_the_scoring_console">Start the Scoring console</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_creating_the_scoring_database"><a class="anchor" href="#_creating_the_scoring_database"></a>Creating the scoring database</h3>
+<div class="paragraph">
+<p>The parameters used in the application are stored in the scoring database.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Access the <code>config.xmlScoring\db</code> folder.</p>
+</li>
+<li>
+<p>Execute <code>create_db.sql</code></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The scoring database is created after the SQL script has completed.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuring_the_database_connections"><a class="anchor" href="#_configuring_the_database_connections"></a>Configuring the database connections</h3>
+<div class="paragraph">
+<p>The connection details to the database need to be specified so that the operator can access the database from the console.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Access the folder.</p>
+</li>
+<li>
+<p>In the root of the folder, edit the <code>config.xml</code> file.</p>
+<div class="paragraph">
+<p>An example of a <code>config.xml</code> file is presented below (note that it is possible to highlight specific lines of code):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;configuration&gt;
+ &lt;environments default="development"&gt;
+   &lt;environment id="development"&gt;
+     &lt;transactionManager type="JDBC"/&gt;
+       &lt;dataSource type="POOLED"&gt;
+         &lt;property name="driver" value="oracle.jdbc.driver.OracleDriver"/&gt;
+         &lt;property name="url" value="jdbc:oracle:thin:@&lt;host&gt;:&lt;port&gt;/&lt;sid&gt;"/&gt;
+         &lt;property name="username" value="&lt;username&gt;"/&gt; <i class="conum" data-value="1"></i><b>(1)</b>
+         &lt;property name="password" value="&lt;password&gt;"/&gt;
+       &lt;/dataSource&gt;
+     &lt;/environment&gt;
+ &lt;/environments&gt;
+       &lt;mappers&gt;
+           &lt;mapper class="com.bpcbt.mappers.ScoringDBM"/&gt;
+       &lt;/mappers&gt;
+    &lt;/configuration&gt;</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Specify your user name.</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Specify the relevant parameters for the URL property:</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>host</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Host name (or IP address) of the scoring database.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>port</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Port of the scoring database.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sid</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique name that identifies the instance of the connection.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The table above uses the <code>[cols="3,7",options="header",]</code> directive to ensure that the columns widths are in the ratio 30:70 and that the table has a header</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>An alternative to a table is to use a description list:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">host</dt>
+<dd>
+<p>Host name (or IP address) of the scoring database. It is possible for a definition to occupy multiple lines.</p>
+</dd>
+<dt class="hdlist1">port</dt>
+<dd>
+<p>Port of the scoring database.</p>
+</dd>
+<dt class="hdlist1">sid</dt>
+<dd>
+<p>Unique name that identifies the instance of the connection.</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>For the <code>username</code> property, specify the relevant user name to access scoring database.</p>
+</li>
+<li>
+<p>For the <code>password</code> property, specify the relevant user&#8217;s password to access scoring database.</p>
+</li>
+<li>
+<p>Save the file.</p>
+</li>
+</ol>
+</div>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Definition lists can also be made more compact:</p>
+</div>
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+host
+</td>
+<td class="hdlist2">
+<p>Host name (or IP address) of the scoring database. It is possible for a definition to occupy multiple lines.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+port
+</td>
+<td class="hdlist2">
+<p>Port of the scoring database.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+sid
+</td>
+<td class="hdlist2">
+<p>Unique name that identifies the instance of the connection.</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>For the <code>username</code> property, specify the relevant user name to access scoring database.</p>
+</li>
+<li>
+<p>For the <code>password</code> property, specify the relevant user&#8217;s password to access scoring database.</p>
+</li>
+<li>
+<p>Save the file.</p>
+</li>
+</ol>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>See <a href="#creating-the-base-scoring-objects.adoc" class="page unresolved">Creating the base scoring objects</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_creating_the_base_scoring_objects"><a class="anchor" href="#_creating_the_base_scoring_objects"></a>Creating the base scoring objects</h3>
+<div class="paragraph">
+<p>Base scoring objects such as scoring maps, rules, requests, and variables can be added to the Scoring database so that they are accessible from the console.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Access the <code>Scoring\db</code> folder.</p>
+</li>
+<li>
+<p>Execute <code>fill_db.sql</code></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The relevant scoring objects are created after the SQL script has completed.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_starting_the_scoring_console"><a class="anchor" href="#_starting_the_scoring_console"></a>Starting the Scoring console</h3>
+<div class="paragraph">
+<p>After the relevant database details have been configured, the console can be started.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Access the Scoring folder.</p>
+</li>
+<li>
+<p>To start the console, perform the action for the relevant operating system being used:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Windows</strong>&#8201;&#8212;&#8201;double-click the <code>Scoring.bat</code> file</p>
+</li>
+<li>
+<p><strong>Unix</strong>&#8201;&#8212;&#8201;execute the following command: <code><strong>java –jar Scoring.jar</strong></code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Open the console.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Appending <code>–pws &lt;host:port&gt;</code> (or  <code>–pws &lt;IP address:port&gt;</code>) to the Unix command enables it to be run as a web service.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
