@@ -173,19 +173,25 @@
 <h2 id="_architecture"><a class="anchor" href="#_architecture"></a>Architecture</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The high-level architecture is depicted in the diagram below.</p>
+<p>The high-level architecture of the system is depicted in the diagram below.</p>
 </div>
-<div class="imageblock">
+<div class="imageblock kroki">
 <div class="content">
-<img src="_images/scoring_architecture.svg" alt="scoring architecture">
+<img src="https://kroki.io/ditaa/svg/eNqlVE1vgzAMvfMrfNzGqmgf102qUA87VOvaSbugSil1GRokFQnbDvnxM1C6AYHC-qS22K6fn2MTBwqwyS_8sbZTchjw3rkQGMMNPf-1bxv2XcO-B3Pg8AtGt_hmY-0DR4k11HHSrmWbRvSkXcv2J3W4Hb8V6sq7YM75F7Mraoyw1WUwm806K9Gn2cmR3-lMIcxRKR4iLGKudzJNDlF38jBxy4rHyHTx1NeW6T-L8Qr93nMaNqj12eNkFgG-099ov88d0vwALpbPCOBZwD7FJFJo74PV1Pt2n7HpqjnctiADVh-poPskltmWrThfFbtUpkNhV6Ue3fzW0eCh0JjmvrNqnlogZveZURPph59PpOgcPjFVkRTm31wDNuWqensVtCLTkE4V3mT6sY95gO1Ujyd7HoVCsU0q-TbgSkcizCNLmRWPXGxBYZgQEdfUS5tjmm0jFAG2y79kmKFqZ7xiQno0QsIFCc-5Ky66XS7wmzZB8BgCWoyN1OoavOXcIl7SylBqgyVHQCEeaAjKrVJyp794ipetQdhuIovgNApDmqVFQynxB8babD0=" alt="System architecture">
 </div>
-<div class="title">Figure 1. Module architecture</div>
+<div class="title">Figure 1. System architecture</div>
 </div>
-<div class="paragraph">
-<p>The image is inserted using the following directive:</p>
-</div>
-<div class="paragraph">
-<p><code>image::scoring_architecture.svg[]</code></p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The IM Platform and API are out of scope.
+</td>
+</tr>
+</table>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -200,33 +206,22 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Business processes</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Business processes provide scoring point calculations based on business rules and behavioral analysis.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Channels 1–4</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Common messaging messaging channels.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Scoring calculator</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The scoring calculator calculates the value of the credit score based on business rules (including behavioral and statistical scoring).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Message Platform</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provides abstracted message functionality for Chat Center and SaaS via available channels.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Secure officer</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The main function of the security officer is to check for fraud.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SaaS</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Online interface for composing and sending messages.
+Cloud-only.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Analyst</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Analysts create and configure scoring maps.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Underwriter</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Underwriters provide the final decision on whether credit is issued to the customer after the calculation and checking have completed.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Internal systems</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Can interact with multiple internal systems such as back-office, front end, fraud management, and core banking systems.
-The following information is exchanged: Customer information, Account statements, Customer history</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>External systems</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Can interact with multiple external entities such as credit bureaus, government databases, mobile banking, Internet banking, and others external systems.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Chat Center</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interface for call center personnel.
+On-premise and cloud options available.</p></td>
 </tr>
 </tbody>
 </table>
@@ -236,7 +231,7 @@ The following information is exchanged: Customer information, Account statements
 <h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The following software must be installed before performing the installation of the Scoring module:</p>
+<p>The following software must be installed before performing the installation of the Chat Center module:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -256,31 +251,31 @@ The following information is exchanged: Customer information, Account statements
 <div class="paragraph">
 <p>The installation of the Scoring module is performed in multiple steps:</p>
 </div>
-<div class="ulist">
-<ul>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p><a href="#Creating the Scoring database">Create the Scoring database</a></p>
+<p><a href="#_creating_the_database">Creating the database</a></p>
 </li>
 <li>
-<p><a href="#_configuring_the_database_connections">Configure the database connections</a></p>
+<p><a href="#_configuring_the_database_connections">Configuring the database connections</a></p>
 </li>
 <li>
-<p><a href="#_creating_the_base_scoring_objects">Create the base scoring objects</a></p>
+<p><a href="#_creating_the_base_objects">Creating the base objects</a></p>
 </li>
 <li>
-<p><a href="#_starting_the_scoring_console">Start the Scoring console</a></p>
+<p><a href="#_starting_the_user_console">Starting the user console</a></p>
 </li>
-</ul>
+</ol>
 </div>
 <div class="sect2">
-<h3 id="_creating_the_scoring_database"><a class="anchor" href="#_creating_the_scoring_database"></a>Creating the scoring database</h3>
+<h3 id="_creating_the_database"><a class="anchor" href="#_creating_the_database"></a>Creating the database</h3>
 <div class="paragraph">
 <p>The parameters used in the application are stored in the scoring database.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Access the <code>config.xmlScoring\db</code> folder.</p>
+<p>Access the <code>config.xmlDena\db</code> folder.</p>
 </li>
 <li>
 <p>Execute <code>create_db.sql</code></p>
@@ -288,7 +283,7 @@ The following information is exchanged: Customer information, Account statements
 </ol>
 </div>
 <div class="paragraph">
-<p>The scoring database is created after the SQL script has completed.</p>
+<p>The database is created after the SQL script has completed.</p>
 </div>
 </div>
 <div class="sect2">
@@ -311,7 +306,7 @@ The following information is exchanged: Customer information, Account statements
 <pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;configuration&gt;
  &lt;environments default="development"&gt;
    &lt;environment id="development"&gt;
-     &lt;transactionManager type="JDBC"/&gt;
+     &lt;tranManager type="JDBC"/&gt;
        &lt;dataSource type="POOLED"&gt;
          &lt;property name="driver" value="oracle.jdbc.driver.OracleDriver"/&gt;
          &lt;property name="url" value="jdbc:oracle:thin:@&lt;host&gt;:&lt;port&gt;/&lt;sid&gt;"/&gt;
@@ -321,7 +316,7 @@ The following information is exchanged: Customer information, Account statements
      &lt;/environment&gt;
  &lt;/environments&gt;
        &lt;mappers&gt;
-           &lt;mapper class="com.bpcbt.mappers.ScoringDBM"/&gt;
+           &lt;mapper class="com.dena.mappers.denaDBM"/&gt;
        &lt;/mappers&gt;
     &lt;/configuration&gt;</code></pre>
 </div>
@@ -355,7 +350,7 @@ The following information is exchanged: Customer information, Account statements
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>port</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Port of the scoring database.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Port of the database.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sid</strong></p></td>
@@ -363,101 +358,22 @@ The following information is exchanged: Customer information, Account statements
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>The table above uses the <code>[cols="3,7",options="header",]</code> directive to ensure that the columns widths are in the ratio 30:70 and that the table has a header</p>
-</div>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>An alternative to a table is to use a description list:</p>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">host</dt>
-<dd>
-<p>Host name (or IP address) of the scoring database. It is possible for a definition to occupy multiple lines.</p>
-</dd>
-<dt class="hdlist1">port</dt>
-<dd>
-<p>Port of the scoring database.</p>
-</dd>
-<dt class="hdlist1">sid</dt>
-<dd>
-<p>Unique name that identifies the instance of the connection.</p>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>For the <code>username</code> property, specify the relevant user name to access scoring database.</p>
-</li>
-<li>
-<p>For the <code>password</code> property, specify the relevant user&#8217;s password to access scoring database.</p>
-</li>
-<li>
-<p>Save the file.</p>
-</li>
-</ol>
-</div>
-</dd>
-</dl>
-</div>
-<div class="paragraph">
-<p>Definition lists can also be made more compact:</p>
-</div>
-<div class="hdlist">
-<table>
-<tr>
-<td class="hdlist1">
-host
-</td>
-<td class="hdlist2">
-<p>Host name (or IP address) of the scoring database. It is possible for a definition to occupy multiple lines.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-port
-</td>
-<td class="hdlist2">
-<p>Port of the scoring database.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-sid
-</td>
-<td class="hdlist2">
-<p>Unique name that identifies the instance of the connection.</p>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>For the <code>username</code> property, specify the relevant user name to access scoring database.</p>
-</li>
-<li>
-<p>For the <code>password</code> property, specify the relevant user&#8217;s password to access scoring database.</p>
-</li>
-<li>
-<p>Save the file.</p>
-</li>
-</ol>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>See <a href="#creating-the-base-scoring-objects.adoc" class="page unresolved">Creating the base scoring objects</a></p>
+<p>See <a href="#creating-the-base-objects.adoc" class="page unresolved">Creating the base objects</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_creating_the_base_scoring_objects"><a class="anchor" href="#_creating_the_base_scoring_objects"></a>Creating the base scoring objects</h3>
+<h3 id="_creating_the_base_objects"><a class="anchor" href="#_creating_the_base_objects"></a>Creating the base objects</h3>
 <div class="paragraph">
-<p>Base scoring objects such as scoring maps, rules, requests, and variables can be added to the Scoring database so that they are accessible from the console.</p>
+<p>Base objects such as maps, rules, requests, and variables can be added to the database so that they are accessible from the console.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Access the <code>Scoring\db</code> folder.</p>
+<p>Access the <code>dena\db</code> folder.</p>
 </li>
 <li>
 <p>Execute <code>fill_db.sql</code></p>
@@ -465,28 +381,28 @@ sid
 </ol>
 </div>
 <div class="paragraph">
-<p>The relevant scoring objects are created after the SQL script has completed.</p>
+<p>The relevant objects are created after the SQL script has completed.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_starting_the_scoring_console"><a class="anchor" href="#_starting_the_scoring_console"></a>Starting the Scoring console</h3>
+<h3 id="_starting_the_user_console"><a class="anchor" href="#_starting_the_user_console"></a>Starting the user console</h3>
 <div class="paragraph">
-<p>After the relevant database details have been configured, the console can be started.</p>
+<p>After the relevant database details have been configured, the user console can be started.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Access the Scoring folder.</p>
+<p>Access the UI folder.</p>
 </li>
 <li>
 <p>To start the console, perform the action for the relevant operating system being used:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Windows</strong>&#8201;&#8212;&#8201;double-click the <code>Scoring.bat</code> file</p>
+<p><strong>Windows</strong>&#8201;&#8212;&#8201;double-click the <code>ui-con.bat</code> file</p>
 </li>
 <li>
-<p><strong>Unix</strong>&#8201;&#8212;&#8201;execute the following command: <code><strong>java –jar Scoring.jar</strong></code></p>
+<p><strong>Unix</strong>&#8201;&#8212;&#8201;execute the following command: <code><strong>java –jar uicon.jar</strong></code></p>
 </li>
 </ul>
 </div>
