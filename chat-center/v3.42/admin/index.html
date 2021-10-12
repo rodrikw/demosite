@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>edna.SaaS: API Guide :: dena Docs Demo Site</title>
-    <link rel="canonical" href="https://rodrikw.github.io/demosite/edna-saas/1.0/api-en/index.html">
-    <link rel="prev" href="../agent-ru/index.html">
-    <link rel="next" href="../supervisor-en/index.html">
-    <meta name="description" content="This document is a stub of an edna.Saas API guide.">
-    <meta name="keywords" content="edna.SaaS, API">
+    <title>Chat Center: Administrator Guide :: dena Docs Demo Site</title>
+    <link rel="canonical" href="https://rodrikw.github.io/demosite/chat-center/v3.42/admin/index.html">
+    <link rel="prev" href="../install/installation.html">
+    <link rel="next" href="../agent/index.html">
+    <meta name="description" content="This document is a stub of a Chat Center administrator guide.">
+    <meta name="keywords" content="Chat Center, administrator">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -61,52 +61,50 @@
   </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="edna-saas" data-version="1.0">
+<div class="nav-container" data-component="chat-center" data-version="v3.42">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="../index.html">edna.SaaS</a></h3>
+    <h3 class="title"><a href="../index.html">dena Chat Center</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../admin-en/index.html">Administrator Guide</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../install/index.html">Installation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../install/architecture.html">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../install/prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../install/installation.html">Installation procedure</a>
   </li>
 </ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../agent-en/index.html">Agent Guide</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../agent-ru/index.html">Руководство агента</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item is-current-page" data-depth="1">
-    <a class="nav-link" href="index.html">API Guide</a>
+    <a class="nav-link" href="index.html">Administrators</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../supervisor-en/index.html">Supervisor Guide</a>
+    <a class="nav-link" href="../agent/index.html">Agents</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../supervisor-ru/index.html">Руководство супервайзера</a>
+    <a class="nav-link" href="../supervisor/index.html">Supervisors</a>
   </li>
 </ul>
   </li>
@@ -115,23 +113,26 @@
 </div>
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
-    <span class="title">edna.SaaS</span>
-    <span class="version">1.0</span>
+    <span class="title">dena Chat Center</span>
+    <span class="version">v3.42</span>
   </div>
   <ul class="components">
     <li class="component">
       <a class="title" href="../../../home/index.html">⌂ Home</a>
       <ul class="versions">
         <li class="version is-latest">
-          <a href="../../../home/index.html">Current</a>
+          <a href="../../../home/index.html">Default</a>
         </li>
       </ul>
     </li>
-    <li class="component">
-      <a class="title" href="../../../chat-center/v3.41/index.html">dena Chat Center</a>
+    <li class="component is-current">
+      <a class="title" href="../index.html">dena Chat Center</a>
       <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../../chat-center/v3.41/index.html">v3.41</a>
+        <li class="version is-current is-latest">
+          <a href="../index.html">v3.42</a>
+        </li>
+        <li class="version">
+          <a href="../../v3.41/index.html">v3.41</a>
         </li>
       </ul>
     </li>
@@ -140,14 +141,6 @@
       <ul class="versions">
         <li class="version is-latest">
           <a href="../../../platform/dev/index.html">dev</a>
-        </li>
-      </ul>
-    </li>
-    <li class="component is-current">
-      <a class="title" href="../index.html">edna.SaaS</a>
-      <ul class="versions">
-        <li class="version is-current is-latest">
-          <a href="../index.html">1.0</a>
         </li>
       </ul>
     </li>
@@ -161,43 +154,41 @@
 <button class="nav-toggle"></button>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="../index.html">edna.SaaS</a></li>
-    <li><a href="index.html">API Guide</a></li>
+    <li><a href="../index.html">dena Chat Center</a></li>
+    <li><a href="index.html">Administrators</a></li>
   </ul>
 </nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">v3.42</button>
+  <div class="version-menu">
+    <a class="version is-current" href="index.html">v3.42</a>
+    <a class="version" href="../../v3.41/admin/index.html">v3.41</a>
+  </div>
+</div>
 </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">edna.SaaS: API Guide</h1>
-<div class="imageblock right text-center">
-<div class="content">
-<a class="image" href="_attachments/{filename}"><img src="../../../home/_images/pdf-icon.svg" alt="pdf icon"></a>
-</div>
+<h1 class="page">Chat Center: Administrator Guide</h1>
+<div class="paragraph">
+<p>This is where the Chat Center administrator guide belongs.</p>
 </div>
 <div class="paragraph">
-<p><br>
-<br></p>
-</div>
-<div class="paragraph">
-<p>This guide is intended for developers and integrators.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="../../../home/_images/check.svg" alt="check"></span> good</p>
+<p><span class="image"><img src="../../../home/_images/check.svg" alt="check"></span> Good</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
 <div class="title">Version</div>
 <div class="paragraph">
-<p>edna.SaaS 1.0</p>
+<p>Chat Center v3.42</p>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="../agent-ru/index.html">Руководство агента</a></span>
-  <span class="next"><a href="../supervisor-en/index.html">Supervisor Guide</a></span>
+  <span class="prev"><a href="../install/installation.html">Installation procedure</a></span>
+  <span class="next"><a href="../agent/index.html">Agents</a></span>
 </nav>
 </article>
   </div>
