@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Chat Center: Supervisor Guide :: dena Docs Demo Site</title>
-    <link rel="canonical" href="https://rodrikw.github.io/demosite/chat-center/dev/supervisor/index.html">
-    <meta name="description" content="This document is a stub of a Chat Center Supervisor guide.">
-    <meta name="keywords" content="Chat Center, supervisor">
+    <title>edna.SaaS: Руководство для агента :: dena Docs Demo Site</title>
+    <link rel="canonical" href="https://rodrikw.github.io/demosite/edna-saas/1.0/agent-ru/index.html">
+    <link rel="prev" href="../agent-en/index.html">
+    <link rel="next" href="../api-en/index.html">
+    <meta name="description" content="Этот документ является заглушкой для руководства агента edna.SaaS.">
+    <meta name="keywords" content="edna.SaaS, agent">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -59,38 +61,52 @@
   </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="chat-center" data-version="dev">
+<div class="nav-container" data-component="edna-saas" data-version="1.0">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="../index.html">dena Chat Center</a></h3>
+    <h3 class="title"><a href="../index.html">edna.SaaS</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../admin/index.html">Administrator Guide</a>
+    <a class="nav-link" href="../admin-en/index.html">Administrator Guide</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../agent/index.html">Agent Guide</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="#index.adoc">Installation Guide</a>
+    <a class="nav-link" href="../agent-en/index.html">Agent Guide</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item is-current-page" data-depth="1">
-    <a class="nav-link" href="index.html">Supervisor Guide</a>
+    <a class="nav-link" href="index.html">Руководство агента</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../api-en/index.html">API Guide</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../supervisor-en/index.html">Supervisor Guide</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../supervisor-ru/index.html">Руководство супервайзера</a>
   </li>
 </ul>
   </li>
@@ -99,8 +115,8 @@
 </div>
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
-    <span class="title">dena Chat Center</span>
-    <span class="version">dev</span>
+    <span class="title">edna.SaaS</span>
+    <span class="version">1.0</span>
   </div>
   <ul class="components">
     <li class="component">
@@ -111,11 +127,11 @@
         </li>
       </ul>
     </li>
-    <li class="component is-current">
-      <a class="title" href="../index.html">dena Chat Center</a>
+    <li class="component">
+      <a class="title" href="../../../chat-center/v3.41/index.html">dena Chat Center</a>
       <ul class="versions">
-        <li class="version is-current is-latest">
-          <a href="../index.html">dev</a>
+        <li class="version is-latest">
+          <a href="../../../chat-center/v3.41/index.html">v3.41</a>
         </li>
       </ul>
     </li>
@@ -124,6 +140,14 @@
       <ul class="versions">
         <li class="version is-latest">
           <a href="../../../platform/dev/index.html">dev</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">edna.SaaS</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0</a>
         </li>
       </ul>
     </li>
@@ -137,8 +161,8 @@
 <button class="nav-toggle"></button>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="../index.html">dena Chat Center</a></li>
-    <li><a href="index.html">Supervisor Guide</a></li>
+    <li><a href="../index.html">edna.SaaS</a></li>
+    <li><a href="index.html">Руководство агента</a></li>
   </ul>
 </nav>
 </div>
@@ -147,21 +171,34 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Chat Center: Supervisor Guide</h1>
-<div class="paragraph">
-<p>This is where the Chat Center supervisor guide belongs.</p>
+<h1 class="page">edna.SaaS: Руководство для агента</h1>
+<div class="imageblock right text-center">
+<div class="content">
+<a class="image" href="_attachments/{filename}"><img src="../../../home/_images/pdf-icon.svg" alt="pdf icon"></a>
+</div>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="../../../home/_images/check.svg" alt="check"></span> Good</p>
+<p><br>
+<br></p>
+</div>
+<div class="paragraph">
+<p>Это руководство предназначено для агентов.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../../home/_images/check.svg" alt="check"></span> good</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
 <div class="title">Version</div>
 <div class="paragraph">
-<p>Chat Center dev</p>
+<p>edna.SaaS 1.0</p>
 </div>
 </div>
 </div>
+<nav class="pagination">
+  <span class="prev"><a href="../agent-en/index.html">Agent Guide</a></span>
+  <span class="next"><a href="../api-en/index.html">API Guide</a></span>
+</nav>
 </article>
   </div>
 </main>

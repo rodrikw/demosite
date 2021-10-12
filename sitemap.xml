@@ -4,9 +4,12 @@
 <loc>https://rodrikw.github.io/demosite/sitemap-chat-center.xml</loc>
 </sitemap>
 <sitemap>
-<loc>https://rodrikw.github.io/demosite/sitemap-dena-saas.xml</loc>
+<loc>https://rodrikw.github.io/demosite/sitemap-edna-saas.xml</loc>
 </sitemap>
 <sitemap>
 <loc>https://rodrikw.github.io/demosite/sitemap-home.xml</loc>
+</sitemap>
+<sitemap>
+<loc>https://rodrikw.github.io/demosite/sitemap-platform.xml</loc>
 </sitemap>
 </sitemapindex>

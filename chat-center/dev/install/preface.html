@@ -3,10 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Chat Center: Supervisor Guide :: dena Docs Demo Site</title>
-    <link rel="canonical" href="https://rodrikw.github.io/demosite/chat-center/dev/supervisor/index.html">
-    <meta name="description" content="This document is a stub of a Chat Center Supervisor guide.">
-    <meta name="keywords" content="Chat Center, supervisor">
+    <title>Preface :: dena Docs Demo Site</title>
+    <link rel="canonical" href="https://rodrikw.github.io/demosite/chat-center/dev/install/preface.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -89,8 +87,8 @@
   </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="1">
-    <a class="nav-link" href="index.html">Supervisor Guide</a>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../supervisor/index.html">Supervisor Guide</a>
   </li>
 </ul>
   </li>
@@ -138,7 +136,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">dena Chat Center</a></li>
-    <li><a href="index.html">Supervisor Guide</a></li>
+    <li><a href="preface.html">Preface</a></li>
   </ul>
 </nav>
 </div>
@@ -147,19 +145,127 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Chat Center: Supervisor Guide</h1>
+<h1 class="page">Preface</h1>
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph">
-<p>This is where the Chat Center supervisor guide belongs.</p>
+<p>This document explains how to install the Chat Center module.</p>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+This is not an actual installation guide.
+It is intended only to demonstrate some features of AscciiDoc, Asciidoctor, and Antora.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_audience"><a class="anchor" href="#_audience"></a>Audience</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p><span class="image"><img src="../../../home/_images/check.svg" alt="check"></span> Good</p>
+<p>This guide is primarily intended for implementation personnel responsible for performing the initial installation of the Chat Center module, or tasked with performing an update.
+Secondary audiences include system administrators, security administrators, and database administrators.</p>
 </div>
-<div class="sidebarblock">
+</div>
+</div>
+<div class="sect1">
+<h2 id="_related_documents"><a class="anchor" href="#_related_documents"></a>Related documents</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following related documents are available:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Document title</th>
+<th class="tableblock halign-left valign-top">Audience</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Chat Center: Administration Guide</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personnel responsible for administering the system and managing users and roles.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Chat Center: User Guide</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operators and customer service representatives who regularly use the product&#8217;s user interface.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_text_conventions"><a class="anchor" href="#_text_conventions"></a>Text conventions</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Convention</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>btn:[OK]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Graphical user interface elements such as buttons.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Select menu:View[Zoom &gt; Reset]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Menu cascades.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code><strong>Bold monospace</strong></code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Commands, functions, processes, and parameter names.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>monospace</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File names, paths, option values.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Italics</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Placeholder variables to be replaced by a suitable value.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<div class="title">Version</div>
-<div class="paragraph">
-<p>Chat Center dev</p>
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</code></pre>
 </div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code examples.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>highlighted text</mark></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kbd:[Ctrl+T]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Keyboard entry.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </article>

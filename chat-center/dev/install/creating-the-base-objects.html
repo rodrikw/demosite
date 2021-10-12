@@ -3,10 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Chat Center: Supervisor Guide :: dena Docs Demo Site</title>
-    <link rel="canonical" href="https://rodrikw.github.io/demosite/chat-center/dev/supervisor/index.html">
-    <meta name="description" content="This document is a stub of a Chat Center Supervisor guide.">
-    <meta name="keywords" content="Chat Center, supervisor">
+    <title>Untitled :: dena Docs Demo Site</title>
+    <link rel="canonical" href="https://rodrikw.github.io/demosite/chat-center/dev/install/creating-the-base-objects.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -89,8 +87,8 @@
   </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="1">
-    <a class="nav-link" href="index.html">Supervisor Guide</a>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../supervisor/index.html">Supervisor Guide</a>
   </li>
 </ul>
   </li>
@@ -136,10 +134,6 @@
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
-  <ul>
-    <li><a href="../index.html">dena Chat Center</a></li>
-    <li><a href="index.html">Supervisor Guide</a></li>
-  </ul>
 </nav>
 </div>
   <div class="content">
@@ -147,18 +141,24 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Chat Center: Supervisor Guide</h1>
+<div class="sect1">
+<h2 id="_creating_the_base_objects"><a class="anchor" href="#_creating_the_base_objects"></a>Creating the base objects</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>This is where the Chat Center supervisor guide belongs.</p>
+<p>Base objects such as maps, rules, requests, and variables can be added to the database so that they are accessible from the console.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Access the <code>dena\db</code> folder.</p>
+</li>
+<li>
+<p>Execute <code>fill_db.sql</code></p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="../../../home/_images/check.svg" alt="check"></span> Good</p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="title">Version</div>
-<div class="paragraph">
-<p>Chat Center dev</p>
+<p>The relevant objects are created after the SQL script has completed.</p>
 </div>
 </div>
 </div>
