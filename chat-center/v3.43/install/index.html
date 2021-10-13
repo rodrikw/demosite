@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Chat Center: Supervisor Guide :: dena Docs Demo Site</title>
-    <link rel="canonical" href="https://rodrikw.github.io/demosite/chat-center/v3.43/supervisor/index.html">
-    <link rel="prev" href="../agent/index.html">
-    <meta name="description" content="This document is a stub of a Chat Center Supervisor guide.">
-    <meta name="keywords" content="Chat Center, supervisor">
+    <title>Chat Center: Installation Guide :: dena Docs Demo Site</title>
+    <link rel="canonical" href="https://rodrikw.github.io/demosite/chat-center/v3.43/install/index.html">
+    <link rel="prev" href="../index.html">
+    <link rel="next" href="architecture.html">
+    <meta name="description" content="This document is intended to demonstrate a typical installation document.">
+    <meta name="keywords" content="Chat Center, installation">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -60,7 +61,7 @@
   </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="chat-center" data-version="v3.41">
+<div class="nav-container" data-component="chat-center" data-version="v3.43">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
@@ -69,18 +70,18 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item" data-depth="1">
+  <li class="nav-item is-current-page" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../install/index.html">Installation</a>
+    <a class="nav-link" href="index.html">Installation</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../install/architecture.html">Architecture</a>
+    <a class="nav-link" href="architecture.html">Architecture</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../install/prerequisites.html">Prerequisites</a>
+    <a class="nav-link" href="prerequisites.html">Prerequisites</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../install/installation.html">Installation procedure</a>
+    <a class="nav-link" href="installation.html">Installation procedure</a>
   </li>
 </ul>
   </li>
@@ -102,8 +103,8 @@
   </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="1">
-    <a class="nav-link" href="index.html">Supervisors</a>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../supervisor/index.html">Supervisors</a>
   </li>
 </ul>
   </li>
@@ -113,7 +114,7 @@
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">dena Chat Center</span>
-    <span class="version">v3.41</span>
+    <span class="version">v3.43</span>
   </div>
   <ul class="components">
     <li class="component">
@@ -125,16 +126,16 @@
       </ul>
     </li>
     <li class="component is-current">
-      <a class="title" href="../../v3.43/index.html">dena Chat Center</a>
+      <a class="title" href="../index.html">dena Chat Center</a>
       <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../v3.43/index.html">v3.43</a>
+        <li class="version is-current is-latest">
+          <a href="../index.html">v3.43</a>
         </li>
         <li class="version">
           <a href="../../v3.42/index.html">v3.42</a>
         </li>
-        <li class="version is-current">
-          <a href="../index.html">v3.41</a>
+        <li class="version">
+          <a href="../../v3.41/index.html">v3.41</a>
         </li>
       </ul>
     </li>
@@ -157,15 +158,15 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">dena Chat Center</a></li>
-    <li><a href="index.html">Supervisors</a></li>
+    <li><a href="index.html">Installation</a></li>
   </ul>
 </nav>
 <div class="page-versions">
-  <button class="version-menu-toggle" title="Show other versions of page">v3.41</button>
+  <button class="version-menu-toggle" title="Show other versions of page">v3.43</button>
   <div class="version-menu">
-    <a class="version" href="../../v3.43/supervisor/index.html">v3.43</a>
-    <a class="version" href="../../v3.42/supervisor/index.html">v3.42</a>
-    <a class="version is-current" href="index.html">v3.41</a>
+    <a class="version is-current" href="index.html">v3.43</a>
+    <a class="version" href="../../v3.42/install/index.html">v3.42</a>
+    <a class="version" href="../../v3.41/install/index.html">v3.41</a>
   </div>
 </div>
 </div>
@@ -174,23 +175,62 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Chat Center: Supervisor Guide</h1>
-<div class="paragraph">
-<p>This is where the Chat Center supervisor guide belongs.</p>
+<h1 class="page">Chat Center: Installation Guide</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock right text-center">
+<div class="content">
+<a class="image" href="_attachments/dena_chat-3.43_install_en_2021-10-13.pdf"><img src="../../../home/_images/pdf-icon.svg" alt="pdf icon"></a>
+</div>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="../../../home/_images/check.svg" alt="check"></span> Good</p>
+<p><br>
+<br></p>
 </div>
 <div class="sidebarblock">
 <div class="content">
 <div class="title">Version</div>
 <div class="paragraph">
-<p>Chat Center v3.41</p>
+<p>Chat Center v3.43</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_preface"><a class="anchor" href="#_preface"></a>Preface</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section explains how to install the Chat Center module.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+This is not an actual installation guide.
+It is intended only to demonstrate some features of AsciiDoc, Asciidoctor, and Antora.
+dena is a fictitious company.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_audience"><a class="anchor" href="#_audience"></a>Audience</h3>
+<div class="paragraph">
+<p>This guide is primarily intended for implementation personnel responsible for performing the initial installation of the Chat Center module, or tasked with performing an update.</p>
+</div>
+<div class="paragraph">
+<p>Secondary audiences include system administrators, security administrators, and database administrators.</p>
+</div>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="../agent/index.html">Agents</a></span>
+  <span class="prev"><a href="../index.html">dena Chat Center</a></span>
+  <span class="next"><a href="architecture.html">Architecture</a></span>
 </nav>
 </article>
   </div>
